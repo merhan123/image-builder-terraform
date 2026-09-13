@@ -2,7 +2,7 @@ module "component" {
   source = "./modules/components"
 
   name      = var.component_name
-  version   = var.component_version
+  component_version = var.component_version
   yaml_path = "${path.root}/components/install-nginx.yaml"
 }
 
@@ -10,7 +10,7 @@ module "recipe" {
   source = "./modules/image_recipe"
 
   name         = var.recipe_name
-  version      = var.recipe_version
+  recipe_version = var.recipe_version
   parent_image = var.parent_image
 
   component_arns = [

@@ -1,6 +1,6 @@
 resource "aws_imagebuilder_image_recipe" "recipe" {
   name         = var.name
-  version      = var.version
+  version      = var.recipe_version
   parent_image = var.parent_image
 
   dynamic "component" {
