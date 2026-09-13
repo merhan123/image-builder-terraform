@@ -2,7 +2,7 @@ variable "name" {
     type = string
     default = ""
 }
-variable "version" {
+variable "recipe_version" {
     type = string
     default = ""
 }

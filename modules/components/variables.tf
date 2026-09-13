@@ -2,7 +2,7 @@ variable "name" {
     type = string
     default = ""
 }
-variable "version" {
+variable "component_version" {
     type = string
     default = ""
 }
